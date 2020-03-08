@@ -1,0 +1,40 @@
+.card{
+    display: grid;
+    grid-template-columns: 120px 1fr 8px ;
+    padding: 10px;
+    row-gap: 10px;
+}
+
+.number{
+    font-family: Cabin Sketch;
+}
+
+.number_container{
+    text-align: center;
+    padding: 10px;
+    font-size: 50px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgba(256, 256, 256, 0.5);
+}
+
+.title{
+    color: white;
+    font-size: 30px;
+    font-family: robot;
+    margin-bottom: 20px;
+}
+
+.subtitle{
+    color: white;
+    font-size: 14px;
+    font-family: robot;
+
+}
+
+.plus{
+    color: white;
+    font-size: 20px;
+    font-family:Cabin Sketch ;
+    text-align: right;
+}
