@@ -4,11 +4,20 @@
     
   }
   .bg_2{
-    display: grid;
     height: 150vh;
-    width: 100%;
     background-color: rgba(256, 256, 256, .5);
     clip-path:polygon(99.46% 99.39%, 99.73% 66.09%, 88% 84.13%, 67.69% 79.72%, 52% 89.7%, 35.15% 76.91%, 19.30% 87.96%, 5px 77.15%, 0px 100%);
+  }
+
+  .hero{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 300px auto 50vw;
+    grid-template-rows: 200px;
+    height: 150vh;
+    width: 100%;
   }
 
   .container{
@@ -17,16 +26,62 @@
     grid-template-columns: 50% 50%;
   }
 
-  .title{
-    grid-column-start: 2;
-    grid-column-end: 3;
+  .ribbon{
+    background-color: #d35336;
+    clip-path: polygon(0 0, 0 100%, 100% 0);
   }
   .img{
     max-width: 600px;
-    grid-column:span 1/2;
   }
   
+  .logo{
+    width: 160px;
+  }
+
+  .nav{
+    padding-top: 50px;
+    font-weight: 600;
+    font:robot;
+    color:gray;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .about{
+    height: 400px;
+   
+    width: 100%;
+    background-color: #f3e5ca;
+    clip-path: polygon(43.21% 10%, 57.42% 31%, 78.84% 17.67%, 100% 15%, 100% 100%, 50% 100%, 0px 100%, 0px 14%, 10.10% 12.67%, 23.84% 28.33%);
+  }
+
+  .about_overlay{
+    height: 400px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    background-color: rgba(243,229,202,.46);
+    clip-path: polygon(43% 3%, 58.16% 15.25%, 78.63% 3.75%, 99.68% 1.5%, 100% 100%, 50% 100%, 0px 100%, 0px 9%, 13% 1%, 24.37% 14.00%)
+
+  }
+
   @media only screen and (max-width: 600px) {
+    .about_overlay{
+      height: 400px;
+      grid-column-start: 1;
+      grid-column-end:1;
+    }
+    .logo{
+      width: 60px;
+    }
+    .hero{
+      grid-template-columns: 100px;
+      grid-template-rows: 100px;
+
+    }
+    .nav{
+      display: none;
+    }
       .bg {
         background-size: cover;
         grid-template-columns: 1fr;
@@ -35,8 +90,14 @@
       }
       .bg_2{
         clip-path: unset;
+        background-color: transparent;
       }
       .img{
         max-width: 100%;
+      }
+      .container{
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+        padding: 20px;
       }
     }
