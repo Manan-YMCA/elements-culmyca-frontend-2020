@@ -3,8 +3,8 @@ import { useMediaQuery } from 'react-responsive'
 import classes from './card.module.css'
 
 const Card = ({ isOpen = false } = {}) => {
-    const isDesktopOrLaptop = useMediaQuery({
-        query: '(min-device-width: 1224px)'
+    const isDesktopOrLaptop = !useMediaQuery({
+        query: '(max-device-width: 600px)'
     })
     const open = isDesktopOrLaptop && isOpen
     const colors = ["#4ab7cc", " #779233", "#38465b"]

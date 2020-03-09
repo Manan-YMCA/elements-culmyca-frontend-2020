@@ -4,7 +4,9 @@ import React from 'react'
 import Card from '../components/card'
 import { Parallax } from "react-parallax"
 
+
 const Events = ({ data } = { data: [] }) => {
+    
     return (<Parallax bgImage={BackgroundImage} strength={800} >
         <div className={classes.bg} >
             <Card></Card>

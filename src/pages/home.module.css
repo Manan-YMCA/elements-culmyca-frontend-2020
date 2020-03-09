@@ -1,0 +1,42 @@
+.bg{
+  margin-bottom: 10vh;
+      clip-path:polygon(50% 0%, 100% 0, 100% 81%, 88% 88%, 70% 85%, 51% 93%, 35% 86%, 17% 95%, 0 91%, 0 0)
+    
+  }
+  .bg_2{
+    display: grid;
+    height: 150vh;
+    width: 100%;
+    background-color: rgba(256, 256, 256, .5);
+    clip-path:polygon(99.46% 99.39%, 99.73% 66.09%, 88% 84.13%, 67.69% 79.72%, 52% 89.7%, 35.15% 76.91%, 19.30% 87.96%, 5px 77.15%, 0px 100%);
+  }
+
+  .container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .title{
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .img{
+    max-width: 600px;
+    grid-column:span 1/2;
+  }
+  
+  @media only screen and (max-width: 600px) {
+      .bg {
+        background-size: cover;
+        grid-template-columns: 1fr;
+        padding: 10px;
+        clip-path: unset;
+      }
+      .bg_2{
+        clip-path: unset;
+      }
+      .img{
+        max-width: 100%;
+      }
+    }
