@@ -1,26 +1,26 @@
-.bg{
+.bg {
   padding: 100px;
-    display: grid;
-    column-gap:0px ;
-    row-gap: 0px;
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 100%;
-    min-height: calc(100vw*.9);
-    /* background-size: 100% 100%;
+  display: grid;
+  column-gap: 0px;
+  row-gap: 0px;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 100%;
+  min-height: calc(100vw * 0.9);
+  /* background-size: 100% 100%;
     position: absolute;
     background-attachment: fixed;
     background-size: cover; */
-    /* clip-path: polygon(50% 0%, 100% 0, 100% 79%, 85% 82%, 63% 80%, 48% 87%, 28% 83%, 13% 85%, 0 81%, 0 0) */
+  /* clip-path: polygon(50% 0%, 100% 0, 100% 79%, 85% 82%, 63% 80%, 48% 87%, 28% 83%, 13% 85%, 0 81%, 0 0) */
 }
 
 @media only screen and (max-width: 600px) {
-    .bg {
-      background-size: cover;
-      grid-template-columns: 1fr;
-      padding: 10px;
-    }
+  .bg {
+    background-size: cover;
+    grid-template-columns: 1fr;
+    padding: 10px;
   }
+}
 
-  /*clip-path: polygon(50% 0%, 100% 0, 100% 81%, 88% 88%, 70% 85%, 51% 93%, 35% 86%, 17% 95%, 0 91%, 0 0);*/
+/*clip-path: polygon(50% 0%, 100% 0, 100% 81%, 88% 88%, 70% 85%, 51% 93%, 35% 86%, 17% 95%, 0 91%, 0 0);*/
 
-  /*clip-path: polygon(99% 100%, 100% 81%, 83% 82%, 68% 89%, 52% 83%, 34% 90%, 17% 84%, 0 91%, 0 100%);*/
+/*clip-path: polygon(99% 100%, 100% 81%, 83% 82%, 68% 89%, 52% 83%, 34% 90%, 17% 84%, 0 91%, 0 100%);*/
