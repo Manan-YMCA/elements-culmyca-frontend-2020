@@ -1,1 +1,1 @@
-import "slick-carousel/slick/slick.css"
+import "./src/styles/global.css"
