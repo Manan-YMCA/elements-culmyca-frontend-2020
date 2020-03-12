@@ -7,8 +7,12 @@ import sample from "../images/sample.png"
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome"
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons/faChevronLeft"
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons/faChevronRight"
+import { useMediaQuery } from "react-responsive"
 
 function Events() {
+  const isPhone = useMediaQuery({
+    query: "(max-device-width: 600px)",
+  })
   const cards = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
   const [active, setActive] = React.useState(0)
   return (
@@ -25,7 +29,9 @@ function Events() {
       <div class={classes.items_wrapper}>
         <div
           class={classes.items}
-          style={{ transform: `translate(${-33 * active + "%"})` }}
+          style={{
+            transform: `translate(${(!isPhone ? -33 : -100) * active + "%"})`,
+          }}
         >
           {cards.map(v => (
             <div
