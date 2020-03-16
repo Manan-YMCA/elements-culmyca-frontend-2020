@@ -28,6 +28,7 @@
 .bg_2 {
   grid-column: 1/1;
   grid-row: 1/1;
+  height: 150vh;
   background-color: rgba(256, 256, 256, 0.5);
   clip-path: polygon(
     99.46% 99.39%,
@@ -63,7 +64,6 @@
 }
 
 .container {
-  height: 100vh;
   display: grid;
   grid-template-columns: 50% 50%;
 }
@@ -147,7 +147,6 @@
   .bg {
     background-size: cover;
     grid-template-columns: 1fr;
-    padding: 10px;
     clip-path: unset;
   }
   .bg_2 {

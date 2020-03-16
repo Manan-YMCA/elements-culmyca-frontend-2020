@@ -7,7 +7,69 @@ body {
   margin: 0;
   padding: 0;
 }
+.st0 {
+  opacity: 0.78;
+  fill: none;
+  stroke: tomato;
+  stroke-width: 0.75;
+  stroke-miterlimit: 10;
+}
+.st1 {
+  opacity: 0.78;
+}
+.st2 {
+  opacity: 0.8;
+  fill: none;
+  stroke: tomato;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+.st3 {
+  opacity: 0.8;
+  stroke: tomato;
+  stroke-miterlimit: 10;
+  animation: animate 1s infinite;
+}
+.st4 {
+  fill: tomato;
+  animation: animate 1s infinite;
+}
+.st5 {
+  fill: #ffffff;
+  animation: animate 1s infinite;
+}
+.st6 {
+  display: none;
+  fill: #ffffff;
+  stroke: tomato;
+  stroke-miterlimit: 10;
+}
+.st7 {
+  display: none;
+}
+.st8 {
+  fill: none;
+}
 
-@import url("https://fonts.googleapis.com/css?family=Cabin+Sketch");
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Lobster");
+/* @keyframes animate{
+   0% {
+    transform: translateX(4px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-4px);
+  }
+} */
+
+@keyframes animate_2{
+  0% {
+    transform: rotateZ(0deg)
+  }
+  50% {
+  }
+  100% {
+    tranform:rotateZ(-30deg)
+  }
+}
